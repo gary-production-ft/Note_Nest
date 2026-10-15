@@ -1,0 +1,47 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  color: #202b3c;
+  line-height: 1.5;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input:focus,
+select:focus {
+  outline-color: #2468df;
+}
+
+::selection {
+  background: #dceaff;
+  color: #172b4d;
+}
