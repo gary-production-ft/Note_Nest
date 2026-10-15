@@ -560,3 +560,20 @@ The current implementation is well suited to local development and demonstration
 ## License
 
 No license has been specified yet. Add a license before distributing or publishing the project.
+
+
+
+## **System Architecture / Workflow**
+
+The diagram below shows how the React frontend communicates with the Express API, authentication services, MongoDB, and PDF storage.
+
+![alt text](image.png)
+
+### Workflow
+
+1. A student uses the React application in the browser.
+2. The frontend sends JSON or multipart requests to the Express API.
+3. The API authenticates users with JWT and bcryptjs.
+4. User and note metadata is stored in MongoDB through Mongoose.
+5. Uploaded PDF files are saved in `backend/uploads`.
+6. The API returns JSON responses or provides PDF files for download.
